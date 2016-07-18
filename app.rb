@@ -1,26 +1,14 @@
-require 'sinatra'
-require 'shotgun'
+require "sinatra"
+require "shotgun"
 
-get '/' do
-  "Hello World"
+get "/" do
+  "Hello world"
 end
 
-get '/secret' do
-  "This is my secret...."
+get "/shotgun" do
+  "shotgun wedding!"
 end
 
-get '/shotgun' do
-  "We are running mods while server is active"
-end
-
-get '/1st_attempt' do
-  "We are not so sure"
-end
-
-get '/2nd_attempt' do
-  "Now we are sure?!"
-end
-
-get '/cat' do
-  http://bit.ly/1eze8aE
+get "/cat" do
+  http://f.cl.ly/items/0k0v3e2X3l2f3i1n1Y19/Screen%20Shot%202013-09-10%20at%2011.32.00.png
 end
