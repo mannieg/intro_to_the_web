@@ -1,4 +1,24 @@
-<h1> My name is <%= @names %> <%= @surname %> and my ages is: <%= @age %> </h1>
+<% if @firstname %>
+  <h1> My name is <%= @firstname %>
+    <% if @surname %>
+      <%= @surname %>
+    <% end %>
+  </h1>
+<% end %>
+<% if @age %>
+  <h2> And my age is <%= @age %> </h2>
+<% end %>
+
 <div>
   <img src='http://bit.ly/1eze8aE' style ='border: 3px dashed red'>
   </div>
+  <br>
+  <form action="/named-cat">
+    First Name: <br>
+    <input type="text" name="firstname"><br>
+    Last Name: <br>
+    <input type="text" name="surname"><br>
+    Age: <br>
+    <input type="text" name="age"><br>
+    <input type="submit" value="Submit">
+  </form>
