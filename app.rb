@@ -14,10 +14,13 @@ get "/random-cat" do
   erb(:index)
 end
 
-get "/named-cat" do
+post "/named-cat" do
   p params
   @firstname = params[:firstname]
-  @surname = params[:surname]
-  @age = params[:age]
   erb(:index)
+end
+
+get "/cat-naming" do
+  erb(:form)
+
 end
