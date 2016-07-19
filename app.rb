@@ -9,7 +9,14 @@ get "/shotgun" do
   "shotgun wedding!"
 end
 
-get "/cat" do
+get "/random-cat" do
   @names = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
+end
+
+get "/named-cat" do
+  p params
+  @names = params[:name]
+  @surname = params[:surname]
   erb(:index)
 end
